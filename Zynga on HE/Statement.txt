@@ -1,0 +1,31 @@
+There are N platforms in a row, each with a unique height. You are given the platform in form of an array A of size N, where the height of the platform is A[i](1 <= i <= N).
+
+You can perform the following operation:
+- If you are standing on ith platform, you can jump on any jth platform such that the height of ith platform is greater than the height of the jth platform, and there is no platform between the ith and jth platform whose height is greater than jth platform.
+
+Determine the minimum number of jumps that are required to go from the tallest platform to the ith platform(for each valid i).
+
+Constraint:
+1 <= T <= 10
+1 <= N <= 1e5
+-1e9 <= A[i] <= 1e9
+
+input format:
+T
+N
+A0 A1 A2...An
+output format:
+X0 X1 X2...Xn
+
+sample input:
+3
+4
+1 3 5 4
+2
+3 5
+5
+5 1 3 4 7
+sample output:
+2 1 0 1
+1 0
+1 2 2 1 0
